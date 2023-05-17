@@ -140,6 +140,7 @@
         tools:layout_editor_absoluteY="641dp" />
 
     <androidx.appcompat.widget.AppCompatButton
+
         android:id="@+id/button5"
         android:layout_width="380dp"
         android:layout_height="55dp"
@@ -192,6 +193,7 @@
         android:id="@+id/imageView11"
         android:layout_width="48dp"
         android:layout_height="36dp"
+
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="100dp"
