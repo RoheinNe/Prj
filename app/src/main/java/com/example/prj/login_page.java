@@ -34,9 +34,6 @@ public class login_page extends AppCompatActivity {
             public void onClick(View view) {
                 uLoginText = uLogin.getText().toString();
                 pLoginText = pLogin.getText().toString();
-//                Toast toastt = Toast.makeText(login_page.this, username + " " + password, Toast.LENGTH_LONG);
-//                toastt.show();
-
                 if (uLoginText.equals(username)) {
                     if (pLoginText.equals(password)) {
                         Toast toast = Toast.makeText(login_page.this, "Login Successful", Toast.LENGTH_SHORT);
