@@ -1,12 +1,11 @@
 package com.example.prj;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     Button btnSignin;
@@ -18,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
         btnSignin = (Button) findViewById(R.id.btnSignin1);
         btnSignup1 = (Button) findViewById(R.id.btnSignup1);
+
         btnSignin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
