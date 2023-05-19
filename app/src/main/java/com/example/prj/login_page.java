@@ -19,15 +19,13 @@ public class login_page extends AppCompatActivity {
     private EditText uLogin;
     private EditText pLogin;
     private Button btnSubmit;
-    public static Registery r;
+    public static Registery r = new Registery();;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_page);
         pLogin = (EditText) findViewById(R.id.password);
-        r = new Registery();
-
         createNewAcc = (TextView) findViewById(R.id.createNewAccountBTN);
         uLogin = (EditText) findViewById(R.id.username);
         btnSubmit = (Button) findViewById(R.id.button2);
@@ -40,7 +38,6 @@ public class login_page extends AppCompatActivity {
                 pLoginText = pLogin.getText().toString();
                 int count = 0;
                 for (Account a : r.acc) {
-                    count++;
                     username = a.getUsername();
                     password = a.getPassword();
                     if (username.equals(uLoginText)) break;
@@ -54,7 +51,7 @@ public class login_page extends AppCompatActivity {
                     }
                     toast.show();
                 } else {
-                    Toast toast = Toast.makeText(login_page.this, "Username not found" + "Count " + count, Toast.LENGTH_SHORT);
+                    Toast toast = Toast.makeText(login_page.this, "Username not found", Toast.LENGTH_SHORT);
                     toast.show();
                 }
             }

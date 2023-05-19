@@ -25,12 +25,12 @@ public class register extends AppCompatActivity {
 
         loginBtn = (TextView) findViewById(R.id.loginBTN);
         signupBtn = (Button) findViewById(R.id.signupBtn);
-        username = ((EditText) findViewById(R.id.registerUsernameTF)).getText().toString();
-        password = ((EditText) findViewById(R.id.registerPasswordTF)).getText().toString();
-        conP = ((EditText) findViewById(R.id.registerConPasswordTF)).getText().toString();
         signupBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                username = ((EditText) findViewById(R.id.registerUsernameTF)).getText().toString();
+                password = ((EditText) findViewById(R.id.registerPasswordTF)).getText().toString();
+                conP = ((EditText) findViewById(R.id.registerConPasswordTF)).getText().toString();
                 Toast toast;
                 if (!conP.equals(password)) {
                     toast = Toast.makeText(register.this, "Password is not the same", Toast.LENGTH_LONG);

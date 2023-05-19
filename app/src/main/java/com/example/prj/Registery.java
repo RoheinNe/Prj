@@ -12,6 +12,7 @@ public class Registery {
     }
 
     public void addAcc(Account e) {
+
         acc.add(e);
     }
 
