@@ -12,6 +12,9 @@
         android:theme="@style/Theme.Prj"
         tools:targetApi="31">
         <activity
+            android:name=".Featured_Vehicles"
+            android:exported="false" />
+        <activity
             android:name=".search_vehicle"
             android:exported="false" />
         <activity
@@ -22,8 +25,7 @@
             android:exported="false" />
         <activity
             android:name=".login_page"
-            android:exported="false"
-            />
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

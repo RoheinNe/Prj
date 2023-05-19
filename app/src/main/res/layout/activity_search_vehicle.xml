@@ -6,29 +6,37 @@
     android:layout_height="match_parent"
     tools:context=".search_vehicle">
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="61dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="207dp"
-        android:layout_marginBottom="72dp"
-        android:text="Button" />
+        android:layout_marginEnd="238dp"
+        android:layout_marginBottom="216dp"
+        android:background="@drawable/buttons"
+        android:backgroundTint="@color/green"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="Search" />
 
     <EditText
         android:id="@+id/editTextTextPersonName"
-        android:layout_width="271dp"
-        android:layout_height="40dp"
+        android:layout_width="380dp"
+        android:layout_height="55dp"
         android:layout_alignParentEnd="true"
-
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="59dp"
-        android:layout_marginBottom="522dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="559dp"
         android:background="@drawable/buttons"
         android:ems="10"
+        android:hint="From"
         android:inputType="textPersonName"
-        android:text="Name" />
+        android:padding="15dp"
+        android:textColorHint="#B9B7BD"
+        android:textSize="15sp" />
 
     <TextView
         android:id="@+id/textView17"
@@ -36,22 +44,27 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="297dp"
-        android:layout_marginBottom="562dp"
-        android:text="From" />
+        android:layout_marginEnd="360dp"
+        android:layout_marginBottom="619dp"
+        android:text="From"
+        android:textColor="#000000" />
 
     <EditText
         android:id="@+id/editTextTextPersonName2"
-        android:layout_width="266dp"
-        android:layout_height="48dp"
+        android:layout_width="380dp"
+        android:layout_height="55dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="64dp"
-        android:layout_marginBottom="421dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="444dp"
         android:background="@drawable/buttons"
         android:ems="10"
+        android:hint="To"
         android:inputType="textPersonName"
-        android:text="Name" />
+        android:padding="15dp"
+        android:textColorHint="#B9B7BD"
+        android:textSize="15sp" />
 
     <TextView
         android:id="@+id/textView16"
@@ -59,21 +72,28 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="314dp"
-        android:layout_marginBottom="470dp"
-        android:text="To" />
+        android:layout_marginEnd="375dp"
+        android:layout_marginBottom="504dp"
+        android:text="To"
+        android:textColor="#000000" />
 
     <EditText
         android:id="@+id/editTextDate"
-        android:layout_width="268dp"
-        android:layout_height="44dp"
+        android:layout_width="380dp"
+        android:layout_height="55dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="61dp"
-        android:layout_marginBottom="318dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="339dp"
         android:background="@drawable/buttons"
+        android:drawableRight="@drawable/baseline_calendar_today_24"
+        android:drawableTint="@color/green"
         android:ems="10"
-        android:inputType="date" />
+        android:hint="DD/MM/YYYY    "
+        android:padding="15dp"
+        android:textColorHint="#B9B7BD"
+        android:textSize="15sp" />
 
     <TextView
         android:id="@+id/textView20"
@@ -81,8 +101,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="299dp"
-        android:layout_marginBottom="364dp"
-        android:text="Date" />
+        android:layout_marginEnd="362dp"
+        android:layout_marginBottom="396dp"
+        android:text="Date"
+        android:textColor="#000000" />
 
 </RelativeLayout>
