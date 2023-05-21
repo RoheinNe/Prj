@@ -45,11 +45,11 @@ public class login_page extends AppCompatActivity {
                 if (uLoginText.equals(username)) {
                     Toast toast;
                     if (pLoginText.equals(password)) {
-                        toast = Toast.makeText(login_page.this, "Login Successful", Toast.LENGTH_SHORT);
+                        startActivity(new Intent(getApplicationContext(), My_Bookings.class));
                     } else {
                         toast = Toast.makeText(login_page.this, "Wrong password", Toast.LENGTH_SHORT);
+                        toast.show();
                     }
-                    toast.show();
                 } else {
                     Toast toast = Toast.makeText(login_page.this, "Username not found", Toast.LENGTH_SHORT);
                     toast.show();
