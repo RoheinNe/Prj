@@ -2,8 +2,10 @@ package com.example.prj;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -21,8 +23,7 @@ public class search_results extends AppCompatActivity implements RecyclerViewInt
         Intent intent = getIntent();
         busName = intent.getStringExtra(search_vehicle.EXTRA_BUS);
         busDate = intent.getStringExtra(search_vehicle.EXTRA_DATE);
-//        busName = "CEBU";
-//        busDate = "12:30";
+
         RecyclerView recyclerView = findViewById(R.id.mRecyclerView);
         setBusModels();
 
@@ -39,6 +40,8 @@ public class search_results extends AppCompatActivity implements RecyclerViewInt
 
     @Override
     public void onItemClick(int position) {
-
+        CardView cv = findViewById(R.id.cardView);
+        cv.setVisibility(View.VISIBLE);
+        startActivity(new Intent(getApplicationContext(), reserve_vehincle.class));
     }
 }
