@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".payment">
+
+    <androidx.appcompat.widget.AppCompatButton
+
+        android:id="@+id/btn4"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="105dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginBottom="311dp"
+        android:background="@drawable/buttons"
+        android:backgroundTint="@color/green"
+        android:text="Proceed"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/registerUsernameTF6"
+        android:layout_width="380dp"
+        android:layout_height="55dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="267dp"
+        android:layout_marginEnd="17dp"
+        android:background="@drawable/edit_text"
+        android:drawableTint="@color/green"
+        android:ems="10"
+        android:hint="00.00"
+        android:inputType="textPersonName"
+        android:padding="15dp"
+        android:textColorHint="#B9B7BD"
+        android:textSize="15sp"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="280dp" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="243dp"
+        android:layout_marginEnd="342dp"
+        android:text="Amount"
+        android:textColor="#000000"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="245dp" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="127dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginBottom="564dp"
+        android:text="Payment"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="116dp" />
+
+</RelativeLayout>
