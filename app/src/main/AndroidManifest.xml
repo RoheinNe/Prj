@@ -12,6 +12,12 @@
         android:theme="@style/Theme.Prj"
         tools:targetApi="31">
         <activity
+            android:name=".Payment_option"
+            android:exported="false" />
+        <activity
+            android:name=".payment"
+            android:exported="false" />
+        <activity
             android:name=".reserve_vehincle"
             android:exported="false" />
         <activity
