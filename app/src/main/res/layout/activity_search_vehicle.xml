@@ -87,10 +87,8 @@
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="339dp"
         android:background="@drawable/buttons"
-        android:drawableRight="@drawable/baseline_calendar_today_24"
-        android:drawableTint="@color/green"
         android:ems="10"
-        android:hint="DD/MM/YYYY    "
+        android:hint="HH:MM"
         android:padding="15dp"
         android:textColorHint="#B9B7BD"
         android:textSize="15sp" />
@@ -103,7 +101,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="362dp"
         android:layout_marginBottom="396dp"
-        android:text="Date"
+        android:text="Time"
         android:textColor="#000000" />
 
         <com.google.android.material.bottomnavigation.BottomNavigationView

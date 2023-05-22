@@ -51,7 +51,6 @@ public class payment extends AppCompatActivity {
                 builder.setAutoCancel(true);
 
                 NotificationManagerCompat managerCompat = NotificationManagerCompat.from(payment.this);
-
                 managerCompat.notify(1, builder.build());
 
 

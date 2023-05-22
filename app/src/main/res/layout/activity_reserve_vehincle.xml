@@ -187,7 +187,7 @@
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="332dp"
             android:layout_marginBottom="230dp"
-            android:text="Button" />
+            android:text="" />
 
         <Button
             android:id="@+id/button14"
@@ -197,7 +197,7 @@
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="334dp"
             android:layout_marginBottom="88dp"
-            android:text="Button" />
+            android:text="" />
 
         <Button
             android:id="@+id/button18"
@@ -217,7 +217,7 @@
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="246dp"
             android:layout_marginBottom="232dp"
-            android:text="Button" />
+            android:text="" />
 
         <Button
             android:id="@+id/button10"
@@ -227,7 +227,7 @@
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="247dp"
             android:layout_marginBottom="157dp"
-            android:text="Button" />
+            android:text="" />
 
         <Button
             android:id="@+id/button15"
@@ -237,7 +237,7 @@
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="247dp"
             android:layout_marginBottom="85dp"
-            android:text="Button" />
+            android:text="" />
 
         <Button
             android:id="@+id/button19"
@@ -277,7 +277,7 @@
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="89dp"
             android:layout_marginBottom="84dp"
-            android:text="Button" />
+            android:text="" />
 
         <Button
             android:id="@+id/button17"
@@ -287,7 +287,7 @@
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="11dp"
             android:layout_marginBottom="83dp"
-            android:text="Button" />
+            android:text="" />
 
         <Button
             android:id="@+id/button11"
@@ -297,7 +297,7 @@
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="331dp"
             android:layout_marginBottom="156dp"
-            android:text="Button" />
+            android:text="" />
 
         <Button
             android:id="@+id/button7"
@@ -307,7 +307,7 @@
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="93dp"
             android:layout_marginBottom="233dp"
-            android:text="Button" />
+            android:text="" />
 
         <Button
             android:id="@+id/button12"
@@ -317,7 +317,7 @@
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="92dp"
             android:layout_marginBottom="156dp"
-            android:text="Button" />
+            android:text="" />
 
         <Button
             android:id="@+id/button8"
@@ -327,7 +327,7 @@
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="6dp"
             android:layout_marginBottom="232dp"
-            android:text="Button" />
+            android:text="" />
 
         <Button
             android:id="@+id/button13"
@@ -337,7 +337,7 @@
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="6dp"
             android:layout_marginBottom="156dp"
-            android:text="Button" />
+            android:text="" />
 
         <Button
             android:id="@+id/reserveBtn"

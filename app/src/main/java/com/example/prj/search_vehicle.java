@@ -35,6 +35,10 @@ public class search_vehicle extends AppCompatActivity {
                         return true;
                     case R.id.ic_book:
                         return true;
+                    case R.id.ic_balance:
+                        startActivity(new Intent(getApplicationContext(), Wallet.class));
+                        overridePendingTransition(0,0);
+                        return true;
                 }
                 return true;
             }

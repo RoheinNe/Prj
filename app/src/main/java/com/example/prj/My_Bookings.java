@@ -30,6 +30,10 @@ public class My_Bookings extends AppCompatActivity {
                         return true;
                     case R.id.ic_home:
                         return true;
+                    case R.id.ic_balance:
+                        startActivity(new Intent(getApplicationContext(), Wallet.class));
+                        overridePendingTransition(0,0);
+                        return true;
                 }
                 return true;
             }
