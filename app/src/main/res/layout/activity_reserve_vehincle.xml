@@ -338,6 +338,19 @@
             android:layout_marginEnd="6dp"
             android:layout_marginBottom="156dp"
             android:text="Button" />
+
+        <Button
+            android:id="@+id/reserveBtn"
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="234dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginEnd="41dp"
+            android:layout_marginBottom="127dp"
+            android:text="Submit" />
     </RelativeLayout>
     </LinearLayout>
 </ScrollView>

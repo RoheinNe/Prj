@@ -7,7 +7,7 @@
     tools:context=".search_vehicle">
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button"
+        android:id="@+id/searchBtn"
         android:layout_width="150dp"
         android:layout_height="61dp"
         android:layout_alignParentEnd="true"
@@ -22,7 +22,7 @@
         android:text="Search" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/fromTF"
         android:layout_width="380dp"
         android:layout_height="55dp"
         android:layout_alignParentEnd="true"
@@ -50,7 +50,7 @@
         android:textColor="#000000" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/toTF"
         android:layout_width="380dp"
         android:layout_height="55dp"
         android:layout_alignParentEnd="true"
@@ -78,7 +78,7 @@
         android:textColor="#000000" />
 
     <EditText
-        android:id="@+id/editTextDate"
+        android:id="@+id/dateTF"
         android:layout_width="380dp"
         android:layout_height="55dp"
         android:layout_alignParentEnd="true"
