@@ -19,7 +19,7 @@ public class login_page extends AppCompatActivity {
     private EditText uLogin;
     private EditText pLogin;
     private Button btnSubmit;
-    public static Registery r = new Registery();;
+    public static Registery r = new Registery();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +42,7 @@ public class login_page extends AppCompatActivity {
                     password = a.getPassword();
                     if (username.equals(uLoginText)) break;
                 }
+
                 if (uLoginText.equals(username)) {
                     Toast toast;
                     if (pLoginText.equals(password)) {
