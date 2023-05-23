@@ -56,7 +56,6 @@ public class login_page extends AppCompatActivity {
                         intent.putExtra(EXTRA_BUS, busName);
                         intent.putExtra(EXTRA_DATE, busDate);
                         startActivity(intent);
-//                        startActivity(new Intent(getApplicationContext(), My_Bookings.class));
                     } else {
                         toast = Toast.makeText(login_page.this, "Wrong password", Toast.LENGTH_SHORT);
                         toast.show();

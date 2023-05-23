@@ -14,6 +14,8 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import java.util.ArrayList;
 
 public class My_Bookings extends AppCompatActivity {
+    public static final String EXTRA_MONEY = "com.example.prj.EXTRA_MONEY";
+    public static final String EXTRA_CURRDATE = "com.example.prj.EXTRA_CURRDATE";
     static final ArrayList<BusModel> busModels = new ArrayList<>();
     String busName;
     String busDate;
@@ -48,7 +50,13 @@ public class My_Bookings extends AppCompatActivity {
                     case R.id.ic_home:
                         return true;
                     case R.id.ic_balance:
-                        startActivity(new Intent(getApplicationContext(), Wallet.class));
+                        Intent intent = new Intent(getApplicationContext(), Wallet.class);
+                        String amount = "";
+                        String currentDateAndTime = "";
+                        intent.putExtra(EXTRA_MONEY, amount);
+                        intent.putExtra(EXTRA_CURRDATE, currentDateAndTime);
+                        startActivity(intent);
+//                        startActivity(new Intent(getApplicationContext(), Wallet.class));
                         overridePendingTransition(0,0);
                         return true;
                     case R.id.ic_settings:
@@ -62,9 +70,5 @@ public class My_Bookings extends AppCompatActivity {
 
     }
 
-    private void setBusModels() {
-//        for (int i = busModels.size(); i < busModels.size() + 1; i++) {
-            busModels.add(new BusModel(busName, busDate));
-//        }
-    }
+
 }

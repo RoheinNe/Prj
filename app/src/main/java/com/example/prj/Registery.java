@@ -8,7 +8,9 @@ public class Registery {
     public Registery() {
         this.acc = new ArrayList<Account>();
         Account e = new Account("calunod", "calunod");
+        Account d = new Account("asd", "asd");
         acc.add(e);
+        acc.add(d);
     }
 
     public void addAcc(Account e) {
