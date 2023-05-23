@@ -6,11 +6,17 @@ import android.view.MenuItem;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class My_Bookings extends AppCompatActivity {
+import java.util.ArrayList;
 
+public class My_Bookings extends AppCompatActivity {
+    static final ArrayList<BusModel> busModels = new ArrayList<>();
+    String busName;
+    String busDate;
     BottomNavigationView bottomNavigationView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +26,17 @@ public class My_Bookings extends AppCompatActivity {
         bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_navigator);
         bottomNavigationView.setSelectedItemId(R.id.ic_home);
 
+        Intent intent = getIntent();
+        busName = intent.getStringExtra(search_vehicle.EXTRA_BUS);
+        busDate = intent.getStringExtra(search_vehicle.EXTRA_DATE);
+
+        RecyclerView recyclerView = findViewById(R.id.actRecyclerView);
+        if (!busName.equals("") && !busDate.equals("")) {
+            busModels.add(new BusModel(busName, busDate));
+            BM_REC_VIEW_AD adapter = new BM_REC_VIEW_AD(this, busModels);
+            recyclerView.setAdapter(adapter);
+            recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        }
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -34,10 +51,20 @@ public class My_Bookings extends AppCompatActivity {
                         startActivity(new Intent(getApplicationContext(), Wallet.class));
                         overridePendingTransition(0,0);
                         return true;
+                    case R.id.ic_settings:
+                        startActivity(new Intent(getApplicationContext(), Profile.class));
+                        overridePendingTransition(0,0);
+                        return true;
                 }
                 return true;
             }
         });
 
+    }
+
+    private void setBusModels() {
+//        for (int i = busModels.size(); i < busModels.size() + 1; i++) {
+            busModels.add(new BusModel(busName, busDate));
+//        }
     }
 }

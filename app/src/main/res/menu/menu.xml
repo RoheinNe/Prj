@@ -19,4 +19,9 @@
         android:id="@+id/ic_balance"
         android:title="Balance"
         android:icon="@drawable/ic_balance"/>
+
+    <item
+        android:id="@+id/ic_settings"
+        android:title="Settings"
+        android:icon="@drawable/ic_settings"/>
 </menu>

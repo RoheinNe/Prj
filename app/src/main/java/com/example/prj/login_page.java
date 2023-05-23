@@ -18,8 +18,12 @@ public class login_page extends AppCompatActivity {
     private TextView createNewAcc;
     private EditText uLogin;
     private EditText pLogin;
+    String busName;
+    String busDate;
     private Button btnSubmit;
     public static Registery r = new Registery();
+    public static final String EXTRA_BUS = "com.example.prj.EXTRA_BUS";
+    public static final String EXTRA_DATE = "com.example.prj.EXTRA_DATE";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,7 +50,13 @@ public class login_page extends AppCompatActivity {
                 if (uLoginText.equals(username)) {
                     Toast toast;
                     if (pLoginText.equals(password)) {
-                        startActivity(new Intent(getApplicationContext(), My_Bookings.class));
+                        Intent intent = new Intent(getApplicationContext(), My_Bookings.class);
+                        busName = "";
+                        busDate = "";
+                        intent.putExtra(EXTRA_BUS, busName);
+                        intent.putExtra(EXTRA_DATE, busDate);
+                        startActivity(intent);
+//                        startActivity(new Intent(getApplicationContext(), My_Bookings.class));
                     } else {
                         toast = Toast.makeText(login_page.this, "Wrong password", Toast.LENGTH_SHORT);
                         toast.show();

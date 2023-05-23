@@ -52,7 +52,7 @@
                     android:id="@+id/t1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingLeft="115dp"
+                    android:paddingLeft="110dp"
                     android:textSize="23sp"
                     android:textStyle="bold"
                     android:layout_gravity="center"
@@ -96,14 +96,14 @@
                     android:id="@+id/t2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingLeft="115dp"
+                    android:paddingLeft="110dp"
                     android:textSize="23sp"
                     android:textStyle="bold"
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="10dp"
                     android:textColor="@color/purple_500"
-                    android:text="Physically"/>
+                    android:text="Bills"/>
 
                 <TextView
                     android:layout_width="wrap_content"

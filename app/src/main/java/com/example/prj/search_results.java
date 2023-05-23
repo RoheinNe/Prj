@@ -12,6 +12,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 public class search_results extends AppCompatActivity implements RecyclerViewInterface {
+    public static final String EXTRA_BUS = "com.example.prj.EXTRA_BUS";
+    public static final String EXTRA_DATE = "com.example.prj.EXTRA_DATE";
     ArrayList<BusModel> busModels = new ArrayList<>();
     String busName;
     String busDate;
@@ -42,6 +44,9 @@ public class search_results extends AppCompatActivity implements RecyclerViewInt
     public void onItemClick(int position) {
         CardView cv = findViewById(R.id.cardView);
         cv.setVisibility(View.VISIBLE);
-        startActivity(new Intent(getApplicationContext(), reserve_vehincle.class));
+        Intent intent = new Intent(getApplicationContext(), reserve_vehincle.class);
+        intent.putExtra(EXTRA_BUS, busName);
+        intent.putExtra(EXTRA_DATE, busDate);
+        startActivity(intent);
     }
 }

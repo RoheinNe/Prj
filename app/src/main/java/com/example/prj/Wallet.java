@@ -34,6 +34,10 @@ public class Wallet extends AppCompatActivity {
                         return true;
                     case R.id.ic_balance:
                         return true;
+                    case R.id.ic_settings:
+                        startActivity(new Intent(getApplicationContext(), Profile.class));
+                        overridePendingTransition(0,0);
+                        return true;
                 }
                 return true;
             }

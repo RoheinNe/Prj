@@ -149,4 +149,15 @@
         android:layout_marginEnd="96dp"
         android:layout_marginBottom="388dp"
         app:srcCompat="@drawable/placeholder" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigator"
+        app:itemBackground="@color/darkGreen"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu"
+        android:layout_alignParentBottom="true"
+        />
 </RelativeLayout>
